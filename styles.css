@@ -27,8 +27,13 @@ body {
   display: flex;
 }
 
+.left {
+  margin: 5rem;
+}
+
 .replyBtn {
-  margin: 2rem;
+  margin-top: 2rem;
+  left: 1rem;
 }
 
 table,
@@ -41,9 +46,8 @@ td {
 table {
   position: absolute;
   border-collapse: collapse;
-  margin-top: 5rem;
-  top: 10%;
   left: 50%;
+  margin: 5rem;
   transform: translateX(-50%);
   text-align: center;
 }
