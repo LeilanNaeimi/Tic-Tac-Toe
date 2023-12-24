@@ -8,7 +8,12 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="tbl">
+    <section class="left">
+      <div class="replyBtn">
+        <button onclick="startGame()" class="btn">Replay</button>
+      </div>
+    </section>
+    <section class="right">
       <table>
         <tr>
           <td class="cell" id="0"></td>
@@ -30,9 +35,6 @@
       <div class="endGame">
         <div class="text"></div>
       </div>
-    </div>
-    <div class="replyBtn">
-      <button onclick="startGame()" class="btn">Replay</button>
-    </div>
+    </section>
   </body>
 </html>
