@@ -26,19 +26,22 @@ function startGame() {
   console.log(board);
   //remove all x and o from the board
   for (let i = 0; i < cells.length; i++) {
+    //empty board
     cells[i].innerHTML = "";
     //remove background color
     cells[i].style.removeProperty("background-color");
+
     cells[i].addEventListener("click", turnclick, false);
   }
 }
 
 function turnclick(e) {
   turn(e.target.id, player1);
+  // board[e.target.id] = player1;
+  // document.getElementById(e.target.id).innerHTML = player1;
 }
 
 function turn(id, player) {
   board[id] = player;
-  console.log(board[id], id, player);
   document.getElementById(id).innerHTML = player;
 }
