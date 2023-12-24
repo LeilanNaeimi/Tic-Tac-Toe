@@ -41,6 +41,7 @@ th,
 td {
   font-size: 50px;
   font-family: "Comic Sans MS", Courier, monospace;
+  color: var(--dark-blu);
 }
 
 table {
@@ -81,12 +82,12 @@ table tr td:last-child {
 
 .endGame {
   display: none;
-  width: 200px;
+  width: 250px;
   top: 120px;
   background-color: var(--gren);
   position: absolute;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -70px;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
