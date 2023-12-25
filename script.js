@@ -43,15 +43,12 @@ function turnclick(e) {
 
 function turn(id, player) {
   cnt++;
-  if (cnt > 9) {
+  board[id] = player;
+  document.getElementById(id).innerHTML = player;
+  if (cnt === 9) {
     console.log(cnt);
     document.querySelector(".endGame").style.display = "block";
     document.querySelector(".endGame").innerHTML = "End Game";
     return;
-  } else {
-    // console.log(cnt);
-    board[id] = player;
-    document.getElementById(id).innerHTML = player;
-    // console.log(id, player);
   }
 }
